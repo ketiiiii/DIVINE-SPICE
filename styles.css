@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
 }
 
-.background{
-background-image: url(images/svg/Layer\ 1.svg) no-repeat;
-}
-.bgimage{
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+body{
+background-image: url(images/background.png);
+background-position:top;
+background-repeat: repeat;
+background-size: cover;
 }
 
 .wrapper{
   background: #ffffff00;
   position: fixed;
   width: 100%;
+  margin-top: 10px;
 }
 .wrapper nav{
   position: relative;
@@ -40,18 +38,21 @@ nav .content .links{
 }
 .content .logo a{
   color: #7B21C3;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 49px;
+  font-weight: 400;
+  font-family: 'Alkaline', sans-serif;
 }
+
 .content .links li{
   list-style: none;
   line-height: 70px;
+  font-family: 'Raleway', sans-serif;
 }
 .content .links li a,
 .content .links li label{
   color: #ffffff;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 9px 17px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -254,4 +255,34 @@ nav .content .links{
   .wrapper .search-box input{
     padding-right: 30px;
   }
+}
+
+
+
+/*1st PAGE*/
+
+/*HEAD CONTENT*/
+
+.header-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-page-head-heading{
+  color: #7B21C3;
+  font-family:'Alkaline', sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.4;
 }
