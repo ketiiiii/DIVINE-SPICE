@@ -14,6 +14,7 @@ body {
   background-size: cover;
   width: 100%;
 }
+
 /*
 #wrapper{
   margin-left:auto;
@@ -352,11 +353,15 @@ p {
 
 @media screen and (max-width: 900px) {
   body {
-    width: 100%;
     background-image: url(images/background.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    
+  margin-left:auto;
+    margin-right:auto;
+    width: 350px;
+
   }
 
   .header-content {
@@ -422,12 +427,6 @@ p {
 
 }
 
-.home-page-h2 {
-  
-
-}
-
-
 h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 45px;
@@ -440,4 +439,118 @@ h3 {
   font-size: 35px;
   color: #A654DE;
   font-weight: 700;
+}
+
+.card-wrapper {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0px 0px 15px 2px #0000003a;
+}
+
+.card-top {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  background: rgb(250, 198, 255);
+  background: linear-gradient(0deg, rgba(250, 198, 255, 1) 0%, rgba(238, 185, 255, 1) 4%, rgba(168, 125, 255, 1) 100%);
+}
+
+.card-top img {
+  height: 290px;
+  position: absolute;
+  bottom: 15px;
+
+}
+
+.card-bottom {
+  height: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.shampoo-title {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 10px; 
+}
+
+.price-title {
+  color: #9942D6;
+  font-family: 'Segoe Ui', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 8px; 
+  padding-bottom: 15px;
+}
+
+.shampoo-button {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:#A77CFE ;
+  border-radius: 19px;
+  height: 40px;
+  width: 170px;
+  border: rgba(255, 255, 255, 0);
+}
+
+
+@media screen and (max-width: 900px){
+
+  .card-content {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .text-box-card-home-page {
+    justify-content: left;
+    width: 100%;
+    padding-left: 20px;
+    position: static;
+  }
+  
+  .home-page-h3 {
+    margin-bottom: 25px;
+  
+  }
+  
+  h2 {
+   
+    font-size: 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 1600px;
+    margin-top: 50px;
+  }
+  
+
+
+
 }
