@@ -8,19 +8,12 @@
 }
 
 body {
-  background-image: url(images/background.png);
+  background-image: url(images/Untitled-1-01.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
-
-/*
-#wrapper{
-  margin-left:auto;
-    margin-right:auto;
-    width:1300px;
-}*/
 
 .wrapper {
   background: #ffffff00;
@@ -353,13 +346,13 @@ p {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: url(images/background.png);
+    background-image: url(images/Untitled-1-01.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    
-  margin-left:auto;
-    margin-right:auto;
+
+    margin-left: auto;
+    margin-right: auto;
     width: 350px;
 
   }
@@ -412,19 +405,20 @@ p {
 
 .card-content {
   width: 100%;
-  height: 200px;
+  height: auto;
+  
 }
 
 .text-box-card-home-page {
   justify-content: left;
   width: 100%;
   padding-left: 50px;
-  position: static;
+  margin-bottom: 70px;
 }
 
 .home-page-h3 {
   margin-bottom: 40px;
-
+  margin-top: 40px;
 }
 
 h2 {
@@ -441,12 +435,13 @@ h3 {
   font-weight: 700;
 }
 
-.card-wrapper {
+.card-wrap {
   height: 650px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 .card {
@@ -487,7 +482,7 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: 700;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .price-title {
@@ -495,7 +490,7 @@ h3 {
   font-family: 'Segoe Ui', sans-serif;
   font-size: 22px;
   font-weight: 500;
-  padding-top: 8px; 
+  padding-top: 8px;
   padding-bottom: 15px;
 }
 
@@ -504,43 +499,50 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 700;
-  background-color:#A77CFE ;
+  background-color: #A77CFE;
   border-radius: 19px;
   height: 40px;
   width: 170px;
   border: rgba(255, 255, 255, 0);
 }
 
+.shampoo-button:hover {
+  color: #A77CFE;
+  background-color: #fff;
+  border: rgba(168, 125, 255);
+  border-style: solid;
+}
 
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 900px) {
 
   .card-content {
     width: 100%;
-    height: 200px;
+    height: auto;
   }
-  
+
   .text-box-card-home-page {
     justify-content: left;
     width: 100%;
     padding-left: 20px;
     position: static;
   }
-  
+
   .home-page-h3 {
     margin-bottom: 25px;
-  
+
   }
-  
+
   h2 {
-   
+
     font-size: 25px;
   }
-  
+
   h3 {
     font-size: 20px;
   }
-  
-  .card-wrapper{
+
+  .card-wrap {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -549,8 +551,188 @@ h3 {
     height: 1600px;
     margin-top: 50px;
   }
+}
+
+
+/*3RD PART OF HOME PAGE*/
+
+.campaign-section {
+  width: 100%;
+  height: 100vh;
+  padding-left: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   
+}
+
+.campaign-section h5 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.campaign-section p {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.campaign-button{
+  color: #A77CFE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 19px;
+  height: 40px;
+  width: 170px;
+  border: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+}
+
+.campaign-button:hover {
+  color: #fff;
+  background-color: #a77cfe00;
+  border: rgb(255, 255, 255);
+  border-style: solid;
+}
 
 
+@media screen and (max-width: 900px){
+  .campaign-section{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
 
+  .campaign-section h5{
+    font-size: 25px;
+  }
+}
+
+/*4TH PART OF HOME PAGE */
+
+.new-edition-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+}
+
+.new-edition-wrapper img {
+  width: 300px;
+  
+}
+
+.new-edition-wrapper div {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 0px 15px 2px #0000003a;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: rgba(168, 125, 255);
+  border-style: solid;
+}
+
+.new-edition-wrapper h5{
+  color: #A361FD;
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+
+.new-edition-wrapper p{
+  color: #000000;
+  padding-left: 30px;
+  font-size: 22px;
+  padding-bottom: 25px;
+
+}
+
+.new-edition-button {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #A77CFE;
+  border-radius: 19px;
+  height: 40px;
+  width: 170px;
+  margin-left: 110px;
+  border: rgba(255, 255, 255, 0);
+}
+
+.new-edition-button:hover {
+  color: #A77CFE;
+  background-color: #fff;
+  border: rgba(168, 125, 255);
+  border-style: solid;
+}
+
+/*FOOTER*/
+
+footer{
+  height:50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.footer-logo{
+  color: #7B21C3;
+  font-size: 49px;
+  font-weight: 400;
+  font-family: 'Alkaline', sans-serif;
+}
+
+.footer-box{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-box div h5{
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.footer-box div p {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.social-media-footer h5{
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+
+.social-media-footer img{
+  height: 50px;
+  padding-right: 15px;
+}
+.social-media-footer .twitter{
+  height: 54px;
 }
