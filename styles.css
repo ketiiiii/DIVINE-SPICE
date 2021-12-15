@@ -8,10 +8,6 @@
 }
 
 body {
-  /*background-image: url();
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   width: 100%;
 }
 
@@ -182,28 +178,26 @@ nav .content .links {
 }
 
 /* Responsive code start */
-@media screen and (max-width: 1250px) {
-  .wrapper nav {
+
+@media screen and (max-width: 1250px){
+  .wrapper nav{
     max-width: 100%;
     padding: 0 20px;
   }
-
-  nav .content .links {
+  nav .content .links{
     margin-left: 30px;
   }
-
-  .content .links li a {
+  .content .links li a{
     padding: 8px 13px;
   }
-
-  .wrapper .search-box {
+  .wrapper .search-box{
     max-width: calc(100% - 100px);
   }
-
-  .wrapper .search-box input {
+  .wrapper .search-box input{
     padding: 0 100px 0 15px;
   }
 }
+
 
 @media screen and (max-width: 900px) {
   .wrapper .menu-icon {
@@ -349,6 +343,7 @@ nav .content .links {
 
 .home-page-head-heading {
   height: 50%;
+  width: 40%;
 }
 
 .home-page-head-heading-h1 {
@@ -360,11 +355,13 @@ nav .content .links {
 }
 
 
-p {
+.header-content p {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #ffffff;
   line-height: 1.4;
+  width: 60%;
+
 }
 
 .body-art img {
@@ -389,7 +386,7 @@ p {
     align-self: center;
     padding-top: 80px;
     height: 850px;
-    background-image: url(images/homepage-mobile-header.png);
+    background-image: url(images/homepage-mobile-header2.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -413,6 +410,7 @@ p {
   .home-page-head-heading {
     text-align: center;
     margin-top: 0px;
+    width: 100%;
   }
 
   .home-page-head-heading-h1 {
@@ -424,15 +422,17 @@ p {
   }
 
 
-  p {
+  .header-content p  {
     font-size: 15px;
     color: #A654DE;
     line-height: 1.4;
+    width: 80%;
+    padding-left: 75px;
   }
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   body {
     margin-left: auto;
     margin-right: auto;
@@ -444,8 +444,12 @@ p {
     flex-wrap: wrap;
     display: flex;
     align-self: center;
-    padding-top: 110px;
-    height: 700px;
+    padding-top: 40px;
+    background-image: url(images/homepage-mobile-header2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
   }
 
   #body-art {
@@ -456,7 +460,7 @@ p {
     position: relative;
     bottom: auto;
     left: auto;
-    height: 330px;
+    height: 380px;
   }
 
   #home-page-head-heading {
@@ -466,14 +470,16 @@ p {
   .home-page-head-heading {
     text-align: center;
     margin-top: 0px;
+    width: 80%;
   }
 
   .home-page-head-heading-h1 {
     color: #7B21C3;
     font-size: 60px;
     font-weight: 400;
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-top: 40px;
+    margin-bottom: 80px;
   }
 
 
@@ -481,6 +487,9 @@ p {
     font-size: 15px;
     color: #A654DE;
     line-height: 1.4;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
 }
@@ -489,7 +498,7 @@ p {
 
 .card-content {
   width: 100%;
-  height: auto;
+  height: 400;
 
 }
 
@@ -566,6 +575,7 @@ h3 {
   font-size: 25px;
   font-weight: 700;
   padding-top: 10px;
+  width: 100%;
 }
 
 .price-title {
@@ -575,6 +585,7 @@ h3 {
   font-weight: 500;
   padding-top: 8px;
   padding-bottom: 15px;
+  width: 100%;
 }
 
 .shampoo-button {
@@ -681,7 +692,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
 
   .card-content {
     width: 100%;
@@ -710,7 +721,7 @@ h3 {
   }
 
   h2 {
-
+    width: 80%;
     font-size: 25px;
   }
 
@@ -792,6 +803,7 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 1.4;
+  width: 30%;
 }
 
 .campaign-button {
@@ -835,6 +847,7 @@ h3 {
 
   .campaign-section p {
     font-size: 15px;
+    width: 70%;
   }
 
   .campaign-button {
@@ -908,10 +921,12 @@ h3 {
   justify-content: space-around;
   height: 500px;
   width: 100%;
+  padding-right: 200px;
 }
 
 .new-edition-wrapper img {
-  width: 300px;
+  width: 700px;
+  padding-right: 100px;
 }
 
 .new-edition-wrapper div {
@@ -923,7 +938,6 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .new-edition-wrapper h5 {
@@ -964,12 +978,13 @@ h3 {
   border-style: solid;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .new-edition-wrapper {
     flex-wrap: wrap;
     height: auto;
     padding-top: 170px;
     padding-bottom: 100px;
+    padding-right: 0px;
   }
 
   .new-edition-wrapper div {
@@ -985,7 +1000,8 @@ h3 {
 
   .new-edition-wrapper img {
     margin-bottom: 60px;
-    width: 160px;
+    width: 375px;
+    padding-right: 0px;
   }
 
   .new-edition-wrapper h5,
@@ -1021,6 +1037,7 @@ h3 {
     height: auto;
     padding-top: 0px;
     padding-bottom: 50px;
+    padding-right: 0px;
   }
 
   .new-edition-wrapper div {
@@ -1036,7 +1053,8 @@ h3 {
 
   .new-edition-wrapper img {
     margin-bottom: 30px;
-    width: 200px;
+    width: 375px;
+    padding-right: 10px;
   }
 
   .new-edition-wrapper h5,
@@ -1067,55 +1085,6 @@ h3 {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .new-edition-wrapper {
-    flex-wrap: wrap;
-    height: auto;
-    padding-top: 170px;
-    padding-bottom: 100px;
-  }
-
-  .new-edition-wrapper div {
-    align-items: center;
-    width: 280px;
-    height: 180px;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .new-edition-wrapper img {
-    margin-bottom: 60px;
-    width: 160px;
-  }
-
-  .new-edition-wrapper h5,
-  .new-edition-wrapper p {
-    padding-left: 0px;
-    text-align: center;
-  }
-
-  .new-edition-wrapper h5 {
-    font-size: 25px;
-  }
-
-  .new-edition-wrapper p {
-    font-size: 15px;
-  }
-
-  .new-edition-button {
-    margin-left: 0px;
-  }
-
-  .new-edition-button {
-    font-size: 20px;
-    height: 40px;
-    width: 160px;
-    margin-left: 0px;
-  }
-}
 
 /*FOOTER*/
 
@@ -1123,20 +1092,13 @@ footer {
   background-image: url(images/footer.png);
   background-size: cover;
   background-position: top;
-  height: 600px;
+  height: 700px;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding-top: 350px;
+  padding-top: 380px;
 }
 
-/*footer {
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 100px;
-}*/
 
 .footer-logo {
   color: #7B21C3;
@@ -1150,6 +1112,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 
 .footer-box div h5 {
   color: #fff;
@@ -1219,6 +1182,7 @@ footer {
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 10px;
+    padding-left: 0px;
   }
 
   .footer-logo {
@@ -1369,7 +1333,7 @@ footer {
 
 .hair-care-heading h1,
 .body-care-heading h1,
-.deodorant-heading h1  {
+.deodorant-heading h1 {
   padding-bottom: 100px;
 }
 
@@ -1396,9 +1360,11 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .hair-care-heading {
+  .hair-care-heading,
+  .deodorant-heading,
+  .body-care-heading  {
     background-image: url(images/mobile-header-2.png);
-    height: 500px;
+    height: 400px;
     background-position: top;
   }
 
@@ -1408,7 +1374,9 @@ footer {
     padding: 50px;
   }
 
-  .hair-care-heading h1 {
+  .hair-care-heading h1,
+  .body-care-heading h1,
+  .deodorant-heading h1 {
     font-size: 50px;
   }
 
@@ -1464,6 +1432,7 @@ footer {
   font-weight: 600;
   padding-top: 80px;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .product-text button {
@@ -1523,6 +1492,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   font-weight: 700;
+  width: 100%;
 }
 
 .advantage-wrapper ul {
@@ -1570,6 +1540,7 @@ footer {
   font-size: 20px;
   font-weight: 400;
   padding-top: 40px;
+  width: 100%;
 }
 
 .product-article2 {
@@ -1592,6 +1563,7 @@ footer {
   font-size: 20px;
   font-weight: 400;
   padding-top: 40px;
+  width: 100%;
 }
 
 @media screen and (max-width: 400px) {
