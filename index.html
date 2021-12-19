@@ -9,10 +9,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://use.typekit.net/juj1gel.css">
+  <meta name="keywords"
+    content="Divine Spice, Body, Hair, Deodorants, Body care, Hair care, Shampoo, Gel, Hair shampoo, Body gel, ">
+
+  <meta name="description" content="Divine Spice- hair and body care products">
 </head>
 
 <body>
-  <!--<img src="images/2.svg" alt="background" class="background-img">-->
   <!--Navigation-->
   <div class="wrapper">
     <nav>
@@ -22,7 +25,7 @@
       <div class="content">
         <div class="logo"><a href="index.html">Divine Spice</a></div>
         <ul class="links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="desktop-link-1">Home</a></li>
           <li>
             <a href="#" class="desktop-link">Products</a>
             <input type="checkbox" id="show-products">
@@ -37,17 +40,17 @@
               <li><a href="#">Gift ideas</a></li>
             </ul>
           </li>
-          <li><a href="https://oldspice.com/">Men</a></li>
+          <li><a href="https://oldspice.com/" class="desktop-link-1">Men</a></li>
           <li>
             <a href="#" class="desktop-link">Campaigns</a>
             <input type="checkbox" id="show-campaigns">
             <label for="show-campaigns">Campaigns</label>
             <ul class="roll-out-nav">
-              <li><a href="#">Female body hair</a></li>
+              <li><a href="campaign.html">Female body hair</a></li>
               <li><a href="#">Female self-esteem</a></li>
             </ul>
           </li>
-          <li><a href="#">MyDivineSpice</a></li>
+          <li><a href="#" class="desktop-link-1">MyDivineSpice</a></li>
           <li>
             <a href="#" class="desktop-link">About us</a>
             <input type="checkbox" id="show-about-us">
@@ -57,11 +60,7 @@
                 <a href="#" class="desktop-link">Divine Spice</a>
                 <input type="checkbox" id="show-divine-spice">
                 <label for="show-divine-spice">Divine Spice</label>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
+
               </li>
               <li><a href="#">Sustainability</a></li>
               <li><a href="#">History</a></li>
@@ -77,47 +76,51 @@
       </form>
     </nav>
   </div>
+  <!--Heading-->
 
   <article class="header-content">
-    <div class="home-page-head-heading" id="home-page-head-heading">
-      <h1 class="home-page-head-heading-h1">Divine Spice</h1>
-      <p>We offer only <b>the best</b> for you, your hair and your body.
-        Our <b> unique</b> strong smell will make you go crazy.  Show your <b> confidence</b> with Divine Spice! Be <b> remembered!</b> </p>
+    <div class="home-page-head-heading " id="home-page-head-heading">
+      <h1 class="home-page-head-heading-h1 ">Divine Spice</h1>
+      <p class="">We offer only <b>the best</b> for you, your hair and your body.
+        Our <b> unique</b> strong smell will make you go crazy. Show your <b> confidence</b> with Divine Spice! Be <b>
+          remembered!</b> </p>
     </div>
     <div class="body-art" id="body-art"><img src="images/body.png" alt=""></div>
   </article>
 
+  <!--Product box-->
 
-
-  <section class="card-content">
-    <div class="text-box-card-home-page">
-      <article>
-        <h3 class="home-page-h3">Bestsellers</h3>
-        <h2 class="home-page-h2">Your favorites all at one place</h2>
-      </article>
+  <section class="card-content reveal">
+    <div class="text-box-card-home-page  reveal">
+      <h3 class="home-page-h3">Bestsellers</h3>
+      <h2 class="home-page-h2">Your favorites all at one place</h2>
     </div>
-    <div class="card-wrap">
+    <div class="card-wrap  reveal">
       <div class="card">
         <div class="card-top">
           <img src="images/hair-shampoo.png" alt="product">
         </div>
         <div class="card-bottom">
-          <h4></h4>
           <p class="shampoo-title">Magnetic Shampoo</p>
           <p class="price-title">35DKK</p>
-          <a href="hair-product.html"><button type="button" class="shampoo-button">SHOP NOW</button></a>
+          <div class="buttons-product">
+            <a href="hair-product.html"><button type="button" class="shampoo-button">VIEW</button></a>
+            <a href="#" class="cart"><img src="images/bag-cart.svg" alt="cart"></a>
+          </div>
         </div>
       </div>
 
       <div class="card">
         <div class="card-top">
-          <img src="images/old spice product.png" alt="product">
+          <img src="images/old-spice-product.png" alt="product">
         </div>
         <div class="card-bottom">
-          <h4></h4>
           <p class="shampoo-title">Cinamon Fresh</p>
           <p class="price-title">18DKK</p>
-          <a href="deodorant-product.html"><button type="button" class="shampoo-button">SHOP NOW</button></a>
+          <div class="buttons-product">
+          <a href="deodorant-product.html"><button type="button" class="shampoo-button">VIEW</button></a>
+          <a href="#" class="cart"><img src="images/bag-cart.svg" alt="cart"></a>
+          </div>
         </div>
       </div>
 
@@ -126,76 +129,118 @@
           <img src="images/body-shampoo.png" alt="product">
         </div>
         <div class="card-bottom">
-          <h4></h4>
           <p class="shampoo-title">Goddess Gel</p>
           <p class="price-title">20DKK</p>
-          <a href="body-product.html"><button type="button" class="shampoo-button">SHOP NOW</button></a>
+          <div class="buttons-product">
+          <a href="body-product.html"><button type="button" class="shampoo-button">VIEW</button></a>
+          <a href="#" class="cart"><img src="images/bag-cart.svg" alt="cart"></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <article class="campaign-section">
-    <h5>End to shaming female <br>
+  <!--Campaign section-->
+  <article class="campaign-section reveal">
+    <h5 class="reveal">End to shaming female <br>
       body hair.</h5>
-    <p>We are here to make a <b> change</b> for better. 
-      No woman should ever feel uncomfortable  
+    <p class="reveal">We are here to make a <b> change</b> for better.
+      No woman should ever feel uncomfortable
       because of her body hair! With our products we
-      want to <b>promote and normalize</b> female 
-      body hair in today's society. <b>Thats why  we did this...</b></p>
-    <button type="button" class="campaign-button">READ MORE</button>
+      want to <b>promote and normalize</b> female
+      body hair in today's society. <b>Thats why we did this...</b></p>
+    <a href="campaign.html"><button type="button" class="campaign-button">READ MORE</button></a>
   </article>
 
-  <section class="new-edition-wrapper">
+  <!--New edition product-->
+  <section class="new-edition-wrapper  reveal">
     <img src="images/homepage-neweditition-product.png" alt="new-edition">
     <div>
       <h5>NEW EDITION</h5>
       <p>With the smell of <br> refreshing coconut <br> and cinamon</p>
-      <a href="deodorant-product.html"><button type="button" class="new-edition-button">SHOP NOW</button></a>
+      <a href="deodorant-product.html"><button type="button" class="new-edition-button">VIEW</button></a>
     </div>
   </section>
-
+  <!--Footer-->
   <footer>
     <div>
-      <h5 class="footer-logo">Divine Spice</h5>
+      <a href="index.html">
+        <h5 class="footer-logo">Divine Spice</h5>
+      </a>
     </div>
     <div class="footer-box">
 
       <div>
         <h5>PRODUCTS</h5>
-        <p>Hair</p>
-        <p>Body</p>
-        <p>Deodorants</p>
-        <p>Bestsellers</p>
+        <a href="hair.html">
+          <p>Hair</p>
+        </a>
+        <a href="body.html">
+          <p>Body</p>
+        </a>
+        <a href="deodorant.html">
+          <p>Deodorants</p>
+        </a>
+        <a href="#">
+          <p>Bestsellers</p>
+        </a>
       </div>
 
       <div>
         <h5>ABOUT US</h5>
-        <p>History</p>
-        <p>Purpose</p>
-        <p>News</p>
-        <p>Sustainability</p>
+        <a href="#">
+          <p>History</p>
+          <p>Purpose</p>
+          <p>News</p>
+          <p>Sustainability</p>
+        </a>
       </div>
 
       <div class="support">
         <h5>SUPPORT</h5>
-        <p>Privacy Policy</p>
-        <p>Conditions</p>
-        <p>Help Centre</p>
-        <p>Contact Us</p>
+        <a href="#">
+          <p>Privacy Policy</p>
+          <p>Conditions</p>
+          <p>Help Centre</p>
+          <p>Contact Us</p>
+        </a>
       </div>
 
     </div>
     <div class="social-media-footer">
       <h5>FOLLOW US ON SOCIAL MEDIA</h5>
       <div>
-        <img src="images/facebook.png" alt="">
-        <img src="images/instagram.png" alt="">
-        <img src="images/twitter.png" alt="" class="twitter">
-        <img src="images/youtube.png" alt="">
+        <a href="#">
+          <img src="images/facebook.png" alt="">
+          <img src="images/instagram.png" alt="">
+          <img src="images/twitter.png" alt="" class="twitter">
+          <img src="images/youtube.png" alt="">
+        </a>
       </div>
     </div>
   </footer>
+
+  <!--JAVA-->
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
+
 </body>
 
 </html>

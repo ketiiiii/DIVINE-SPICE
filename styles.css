@@ -39,11 +39,30 @@ nav .content .links {
   display: flex;
 }
 
+.logo {
+  background: white;
+  height: 65px;
+  width: 240px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.desktop-link,
+.desktop-link-1 {
+  background: #ffe6e6;
+  height: auto;
+  width: auto;
+  margin: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+
 .content .logo a {
   color: #7B21C3;
   font-size: 49px;
   font-weight: 400;
   font-family: 'Alkaline', sans-serif;
+
 }
 
 .content .links li {
@@ -54,7 +73,7 @@ nav .content .links {
 
 .content .links li a,
 .content .links li label {
-  color: #ffffff;
+  color: #7B21C3;
   font-size: 18px;
   font-weight: 600;
   padding: 9px 17px;
@@ -69,12 +88,12 @@ nav .content .links {
 
 .content .links li a:hover,
 .content .links li label:hover {
-  background: #7a21c383;
+  background: #FCBCF7;
 }
 
 .wrapper .search-icon,
 .wrapper .menu-icon {
-  color: rgb(255, 255, 255);
+  color: #7B21C3;
   font-size: 18px;
   cursor: pointer;
   line-height: 70px;
@@ -111,13 +130,13 @@ nav .content .links {
   border: none;
   outline: none;
   font-size: 17px;
-  color: #7B21C3;
-  background: #ffffff;
+  color: #ffffff;
+  background: #7B21C3;
   padding: 0 100px 0 15px;
 }
 
 .search-box input::placeholder {
-  color: #7a21c386;
+  color: #ffffff86;
 }
 
 .search-box .go-icon {
@@ -127,10 +146,10 @@ nav .content .links {
   transform: translateY(-50%);
   line-height: 60px;
   width: 70px;
-  background: #ffffff;
+  background: #7B21C3;
   border: none;
   outline: none;
-  color: #7B21C3;
+  color: #ffffff;
   font-size: 20px;
   cursor: pointer;
 }
@@ -142,7 +161,7 @@ nav .content .links {
 /* Dropdown Menu code start */
 .content .links ul {
   position: absolute;
-  background: #7a21c39f;
+  background: #ffa1ff;
   top: 80px;
   z-index: -1;
   opacity: 0;
@@ -179,21 +198,25 @@ nav .content .links {
 
 /* Responsive code start */
 
-@media screen and (max-width: 1250px){
-  .wrapper nav{
+@media screen and (max-width: 1250px) {
+  .wrapper nav {
     max-width: 100%;
     padding: 0 20px;
   }
-  nav .content .links{
+
+  nav .content .links {
     margin-left: 30px;
   }
-  .content .links li a{
+
+  .content .links li a {
     padding: 8px 13px;
   }
-  .wrapper .search-box{
+
+  .wrapper .search-box {
     max-width: calc(100% - 100px);
   }
-  .wrapper .search-box input{
+
+  .wrapper .search-box input {
     padding: 0 100px 0 15px;
   }
 }
@@ -262,6 +285,16 @@ nav .content .links {
     display: none;
   }
 
+  .content .links li a,
+  .content .links li label {
+    color: #ffffff;
+  }
+
+  .wrapper .search-icon,
+  .wrapper .menu-icon {
+    color: #ffffff;
+  }
+
   /* dropdown responsive code start */
   .content .links ul,
   .content .links ul ul {
@@ -297,6 +330,30 @@ nav .content .links {
   .menu-icon {
     padding-right: 80px;
 
+
+  }
+
+  .content .logo a {
+    font-size: 33px;
+  }
+
+  .desktop-link,
+  .desktop-link-1 {
+    background: rgba(255, 255, 255, 0);
+    height: auto;
+    width: auto;
+    margin: 0px;
+    border-radius: 0px;
+    text-align: center;
+  }
+
+  .logo {
+    background: white;
+    height: 45px;
+    width: 170px;
+    ;
+    text-align: center;
+    border-radius: 20px
   }
 }
 
@@ -321,11 +378,19 @@ nav .content .links {
   .wrapper .search-box input {
     padding-right: 30px;
   }
+
+  .logo {
+    background: white;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+  }
 }
 
 
 
-/*1st PAGE*/
+/*HOME PAGE*/
 
 /*HEAD CONTENT*/
 
@@ -335,7 +400,7 @@ nav .content .links {
   height: 950px;
   width: 100%;
   z-index: -1;
-  background-image: url(images/background.png);
+  background-image: url(images/homepage-header.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -422,7 +487,7 @@ nav .content .links {
   }
 
 
-  .header-content p  {
+  .header-content p {
     font-size: 15px;
     color: #A654DE;
     line-height: 1.4;
@@ -492,13 +557,22 @@ nav .content .links {
     padding-left: 0px;
   }
 
+  .header-content p {
+    font-size: 15px;
+    color: #A654DE;
+    line-height: 1.4;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
 }
 
 /*2ND PART OF HOME PAGE*/
 
 .card-content {
   width: 100%;
-  height: 400;
+  height: 750px;
 
 }
 
@@ -552,8 +626,7 @@ h3 {
   justify-content: center;
   align-items: center;
   border-radius: 28px;
-  background: rgb(250, 198, 255);
-  background: linear-gradient(0deg, rgba(250, 198, 255, 1) 0%, rgba(238, 185, 255, 1) 4%, rgba(168, 125, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(253, 174, 252, 0.692612079011292) 0%, rgba(250, 195, 255, 0.6898109585631127) 100%);
 }
 
 .card-top img {
@@ -586,6 +659,30 @@ h3 {
   padding-top: 8px;
   padding-bottom: 15px;
   width: 100%;
+}
+
+.buttons-product {
+  display: flex;
+  padding-left: 62px;
+}
+
+.buttons-product img {
+  width: 30px;
+  padding-top:3px;
+  fill: #ffffff;
+}
+
+.cart {
+  width: 40px;
+  height: 40px;
+  background: #A77CFE;
+  border-radius: 25px;
+  margin-left: 5px;
+}
+.cart:hover {
+  background: #a77cfebe;
+  border: rgba(168, 125, 255);
+  border-style: solid;
 }
 
 .shampoo-button {
@@ -955,6 +1052,7 @@ h3 {
   padding-left: 30px;
   font-size: 22px;
   padding-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -1089,7 +1187,7 @@ h3 {
 /*FOOTER*/
 
 footer {
-  background-image: url(images/footer.png);
+  background-image: url(images/foooter-laptop.png);
   background-size: cover;
   background-position: top;
   height: 700px;
@@ -1360,12 +1458,14 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+
   .hair-care-heading,
   .deodorant-heading,
-  .body-care-heading  {
-    background-image: url(images/mobile-header-2.png);
-    height: 400px;
+  .body-care-heading {
+    background-image: url(images/mobile-product-header-2.png);
+    height: 345px;
     background-position: top;
+    background-size: cover;
   }
 
   .card-grid {
@@ -1378,6 +1478,7 @@ footer {
   .body-care-heading h1,
   .deodorant-heading h1 {
     font-size: 50px;
+    padding-top: 55px;
   }
 
 
@@ -1423,6 +1524,7 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   padding-top: 30px;
+  width: 100%;
 }
 
 .product-text p {
@@ -1541,6 +1643,8 @@ footer {
   font-weight: 400;
   padding-top: 40px;
   width: 100%;
+  text-align: left;
+  padding-left: 350px;
 }
 
 .product-article2 {
@@ -1564,13 +1668,19 @@ footer {
   font-weight: 400;
   padding-top: 40px;
   width: 100%;
+  text-align: left;
+  padding-left: 350px;
 }
 
 @media screen and (max-width: 400px) {
 
+  .product-header {
+    background-image: url(images/mobile-product-header-2.png);
+    height: 550px;
+  }
+
   .product-text {
     height: 300px;
-
   }
 
   .product-header img {
@@ -1662,6 +1772,7 @@ footer {
   .product-article p {
     font-size: 15px;
     padding-top: 40px;
+    padding-left: 0px;
   }
 
   .product-article2 {
@@ -1677,6 +1788,7 @@ footer {
   .product-article2 p {
     font-size: 15px;
     padding-top: 40px;
+    padding-left: 0px;
   }
 }
 
@@ -1685,7 +1797,6 @@ footer {
 
   .product-text {
     height: 300px;
-
   }
 
   .product-header img {
@@ -1793,4 +1904,77 @@ footer {
     font-size: 15px;
     padding-top: 40px;
   }
+}
+
+/*Campaign*/
+
+
+.campaign-paragraph {
+  height: auto;
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.campaign-paragraph p {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 40px;
+  width: 70%;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.third-part-campaign {
+  width: 100%;
+  height: 300px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campaign-image {
+  padding-left: 100px;
+  width: 50%;
+}
+
+.campaign-text {
+  padding-right: 100px;
+  width: 100%;
+}
+
+.third-part-campaign h5 {
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 40px;
+  padding-left: 300px;
+  width: 100%;
+}
+
+
+.third-part-campaign p {
+  color: rgb(0, 0, 0);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  width: 100%;
+  padding-left: 300px;
+}
+
+/*Java*/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }

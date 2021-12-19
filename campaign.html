@@ -46,7 +46,7 @@
                         <input type="checkbox" id="show-campaigns">
                         <label for="show-campaigns">Campaigns</label>
                         <ul class="roll-out-nav">
-                            <li><a href="campaign.html">Female body hair</a></li>
+                            <li><a href="#">Female body hair</a></li>
                             <li><a href="#">Female self-esteem</a></li>
                         </ul>
                     </li>
@@ -78,71 +78,52 @@
     </div>
 <!--Heading-->
 
-    <section class="product-header">
-        <img src="images/hair-shampoo.png" alt="product">
-    </section>
-<!--Product description-->
-
-    <div class="product-text">
-        <h1>MAGNETIC</h1>
-        <h2>Hair Shampoo</h2>
-        <p>865 ml&nbsp;&nbsp;&nbsp;&nbsp; 35 DKK</p>
-        <a href="hair-product.html"><button type="button">ADD TO CART</button></a>
+    <div class="hair-care-heading ">
+        <h1>Female Body Hair</h1>
     </div>
-
-    <section class="advantage-wrapper">
-        <h3>ADVANTAGE</h3>
-        <div class="advantage-boxes">
-            <div>
-                <img src="images/smell.png" alt="image-1">
-                <p>ANTIPERSPIRANT</p>
-            </div>
-            <div>
-                <img src="images/soft.png" alt="image-2">
-                <p>SENSITIVE SKIN</p>
-            </div>
-            <div>
-                <img src="images/alch.png" alt="image-3">
-                <p>NON-ALCOHOLIC</p>
-            </div>
-            <div>
-                <img src="images/vegan.png" alt="image-4">
-                <p>VEGAN</p>
-            </div>
-            <div>
-                <img src="images/enviorm.png" alt="image-5">
-                <p>ECO FRIENDLY</p>
-            </div>
-
+<!--First part of the article-->
+    <article>
+        <div class="text-box-card-home-page">
+            <article>
+                <h3 class="hair-page-h3">Campaign</h3>
+                <h2 class="home-page-h2">End shaming female body hair</h2>
+            </article>
         </div>
-        <ul>
-            <li>Without ethyl alcohol</li>
-            <li>48 hours of reliable protection</li>
-            <li>Specially developed for sensitive skin</li>
-            <li>Skin-friendly and dermatologically tested</li>
-            <li>Vegan and eviormentaly friendly</li>
-        </ul>
-
-    </section>
-
-    <article class="product-article">
-        <h3>READ MORE ABOUT THIS PRODUCT</h3>
-        <p>DIVINE SPICE Magnetic provides the balanced combination of mild care and <br>
-            effective protection for up to 48 hours. Reliable formula with avocado  <br>
-            oil and spicy scent gives you effective protection against sweat <br>
-            without irritating the skin. The optimal combination of effective protection <br>
-            and our gentle care for sensitive skin.</p>
     </article>
 
-    <article class="product-article2"> 
-        <h3>INGREDIENT LIST</h3>
-        <p>Aqua, Aluminum Chlorohydrate, PPG-15 Stearyl Ether, Steareth-2, Steareth-21, <br>
-            Recutita Flower Extract, Bisabolol, Persea Gratissima Oil, Glycine Soybean Oil, <br>
-            Tocopherol, Trisodium EDTA, BHT, Linalool, Geraniol, Citronellol <br> 
-            Text credit: (Nivea,2021)
-            </p>
+    <article class="campaign-paragraph">
+        <p>We are here to make a <b> change</b> for better.
+            No woman should ever feel uncomfortable
+            because of her body hair! With our products we
+            want to <b>promote and normalize</b> female
+            body hair in today's society. <b>Thats why we did this...</b></p>
     </article>
-<!--Footer-->
+<!--Second part of the article-->
+    <article class="campaign-section">
+        <h5> Heading (second part of the <br> article)
+        </h5>
+        <p>"Here would a paragraph about the article.Here would a 
+            paragraph about the article.Here would a paragraph about
+            the article.Here would a paragraph about the article
+            Here would a paragraph about the article.Here would a
+            paragraph about the article.&nbsp;"</p>
+    </article>
+<!--Third part of the article-->
+    <article class="third-part-campaign">
+        <div class="campaign-image">
+            <img src="images/body.png" alt="body-images">
+        </div>
+        <div class="campaign-text">
+        <h5> Heading (third part of the <br> article)
+        </h5>
+        <p>"Here would a paragraph about the article.Here would a <br>
+            paragraph about the article.Here would a paragraph about<br>
+            the article.Here would a paragraph about the article.<br>
+            Here would a paragraph about the article.Here would a<br>
+            paragraph about the article.&nbsp;"</p>
+        </div>
+    </article>
+
     <footer>
         <div>
           <a href="index.html">
@@ -192,27 +173,6 @@
           </div>
         </div>
       </footer>
-
-<!--JAVA-->
-    <script>
-        function reveal() {
-          var reveals = document.querySelectorAll(".reveal");
-    
-          for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
-    
-            if (elementTop < windowHeight - elementVisible) {
-              reveals[i].classList.add("active");
-            } else {
-              reveals[i].classList.remove("active");
-            }
-          }
-        }
-    
-        window.addEventListener("scroll", reveal);
-      </script>
 </body>
 
 </html>
