@@ -49,7 +49,7 @@ nav .content .links {
 
 .desktop-link,
 .desktop-link-1 {
-  background: #ffe6e6;
+  background: #ffffff;
   height: auto;
   width: auto;
   margin: 5px;
@@ -777,7 +777,7 @@ h3 {
     background-color: #A77CFE;
     border-radius: 19px;
     height: 40px;
-    width: 150px;
+    width: 120px;
     border: rgba(255, 255, 255, 0);
   }
 
@@ -786,6 +786,11 @@ h3 {
     background-color: #fff;
     border: rgba(168, 125, 255);
     border-style: solid;
+  }
+
+  .buttons-product {
+    display: flex;
+    padding-left: 65px;
   }
 }
 
@@ -861,7 +866,7 @@ h3 {
     background-color: #A77CFE;
     border-radius: 19px;
     height: 40px;
-    width: 150px;
+    width: 120px;
     border: rgba(255, 255, 255, 0);
   }
 
@@ -870,6 +875,11 @@ h3 {
     background-color: #fff;
     border: rgba(168, 125, 255);
     border-style: solid;
+  }
+
+  .buttons-product {
+    display: flex;
+    padding-left: 65px;
   }
 }
 
@@ -1795,6 +1805,11 @@ footer {
 
 @media screen and (max-width: 900px) {
 
+  .product-header {
+    background-image: url(images/mobile-product-header-2.png);
+    height: 550px;
+  }
+
   .product-text {
     height: 300px;
   }
@@ -1817,6 +1832,7 @@ footer {
     font-size: 17px;
     padding-top: 40px;
     padding-bottom: 40px;
+
   }
 
 
@@ -1877,7 +1893,7 @@ footer {
 
   .product-article {
     width: 85%;
-    height: 400px;
+    height: 330px;
   }
 
   .product-article h3 {
@@ -1888,6 +1904,7 @@ footer {
   .product-article p {
     font-size: 15px;
     padding-top: 40px;
+    padding-left: 0px;
   }
 
   .product-article2 {
@@ -1903,6 +1920,7 @@ footer {
   .product-article2 p {
     font-size: 15px;
     padding-top: 40px;
+    padding-left: 0px;
   }
 }
 
